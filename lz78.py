@@ -78,7 +78,7 @@ def decompress(data: bytes) -> bytes:
 
     while i < data_length:
         # Read the next (index, character) pair
-        # Index is 2 bytes unsigned int (big-endian), character is 1 byte
+        # Index is 4 bytes unsigned int (big-endian), character is 1 byte
         if i + 3 > data_length:
             # Not enough data to unpack index and character
             break
