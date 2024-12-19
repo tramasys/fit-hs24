@@ -92,6 +92,7 @@ def decompress(data: bytes) -> bytes:
             entry = dictionary[index] + bytes([byte])
         else:
             entry = dictionary[index]
+
         # Append the entry to the decompressed data
         decompressed_data += entry
         # Add the new entry to the dictionary
